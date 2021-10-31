@@ -1,0 +1,121 @@
+@import '../../../scss/main.scss';
+
+.header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 5%;
+          position: absolute;
+          margin-top: 2.5rem;
+          z-index: 50;
+
+          @media ($tablet) {
+                    margin-top: 0;
+          }
+
+          @media ($phone) {
+                    align-items: flex-start;
+          }
+
+          &__logo{
+                    @media ($phone) {
+                              margin-top: 2rem;
+                    }
+          }
+
+          &__line{
+                    width: 29.5625rem;
+                    height: 0.05rem;
+                    background-color: #979797;
+                    transform: translateX(3rem);
+                    z-index: 2;
+
+                    @media ($tablet) {
+                              display: none;
+                    }
+          }
+
+          & nav{
+
+                    background-color: rebeccapurple;
+                    height: 6rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.04);
+                    backdrop-filter: blur(81.54845428466797px);
+                    padding: 0rem 10% 0rem 7.6875rem;
+
+                    @media ($tablet) {
+                              padding: 0rem 5% 0rem 5%;
+                              backdrop-filter: none;
+                    }
+
+                    @media ($phone) {
+                             flex-direction: column;
+                             align-items:flex-start;
+                             height: 100vh;
+                             backdrop-filter: blur(81.54845428466797px);
+                             width: 70%;
+                             padding: 10vh 5% 0rem 5%;
+                             
+                             display: none;
+                    }
+
+
+                    & > a{
+                              text-decoration: none;
+                              color: $White;
+                              font-family: $font2;
+                              font-weight: 300;
+                              padding: 2.4rem 0rem;
+                              position: relative;
+                              letter-spacing: 0.2rem;
+
+                              @media ($phone) {
+                                        margin: 0;
+                                        padding: 2rem 11.8rem 0rem 0rem;
+                              }
+                              
+                              &:nth-child(-n +3){
+                                        margin-right: 3rem;
+                              }
+
+                              & > span{
+                                        margin-right: 0.6875rem;
+                                        font-weight: 500;
+
+                                        @media ($tablet) {
+                                                  display: none;
+                                        }
+                              }
+
+                              &:hover::before{
+                                        content: '';
+                                        width: 100%;
+                                        height: 3px;
+                                        position: absolute;
+                                        background-color: rgba(255, 255, 255, 0.411);
+                                        bottom: 0;
+
+                                        @media ($phone) {
+                                                 display: none;
+                                        }
+                              }
+
+                          
+                    }
+          }
+
+          .active{
+
+                    &::before{
+                              content: '';
+                              width: 100%;
+                              height: 3px;
+                              position: absolute;
+                              background-color: $White;
+                              bottom: 0;
+                    }
+          }
+}

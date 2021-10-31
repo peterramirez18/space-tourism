@@ -1,0 +1,32 @@
+// 01 COLORESs
+$Dark: #0B0D17;
+$LightPurple: #D0D6F9;
+$White: #FFFFFF;
+
+// 02 TYPOGRAPHY
+
+h1{ font-size: 9.375rem;}
+h2{ font-size: 6.25rem;}
+h3{ font-size: 3.5rem;}
+h4{ font-size: 2rem;}
+h5{ font-size: 1.74rem;}
+h6{ font-size: 1.74rem;}
+p{ font-size: 1.125rem;}
+$NavText: 1rem;
+
+$font1: 'Bellefair', serif;
+$font2: 'Barlow Condensed', sans-serif;
+$font3: 'Barlow', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&display=swap');
+
+
+// BREAKPOINT
+
+$phone: 'max-width: 767px';
+$miniphone: 'max-width: 359px';
+$tablet: 'max-width: 991.98px';
+
